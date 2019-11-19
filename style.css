@@ -3,16 +3,10 @@
 
 /* open-sans-regular - latin */
 @font-face {
+  font-family: 'DM Serif Display', serif;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/open-sans-v16-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Open Sans Regular'), local('OpenSans-Regular'),
-       url('/fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/open-sans-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/open-sans-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('/fonts/open-sans-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
 
 html, body {
@@ -23,7 +17,7 @@ html, body {
 
 html {
   scroll-behavior: smooth;
-  background: url(http://www.ericcayce.com/images/leaves_2_copy.jpg) no-repeat center center fixed;
+  background: url(http://www.ericcayce.com/images/leaves_2.jpg) no-repeat center center fixed;
   background-color: #000000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -42,7 +36,7 @@ body {
 footer {
   background-color: #f7f7f7;
   position: relative;
-  height: 200px;
+  height: 48px;
 }
 
 a {
@@ -59,7 +53,7 @@ a:hover {
 
 h1 {
   font-family: 'DM Serif Display', serif;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 400;
   line-height: 1;
   color: #fffff0;
@@ -101,10 +95,9 @@ span {
 
 .header {
   height: 120px;
-  background-color: rgb(0, 0, 0, .65);
   display: flex;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 48px;
 }
 
 .header-inner {
@@ -117,8 +110,8 @@ span {
 }
 
 .title {
-  display: inline-block;
-  height: 75px;
+  display: block;
+  height: 56px;
 }
 
 .menu {
@@ -138,6 +131,10 @@ span {
   margin-left: 32px;
 }
 
+.menu_button a:hover {
+  color: #fffff0;
+}
+
 .dropdown-menu {
   display: none;
 }
@@ -147,22 +144,21 @@ span {
   content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZjAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PGxpbmUgeDE9IjMiIHkxPSIxMiIgeDI9IjIxIiB5Mj0iMTIiPjwvbGluZT48bGluZSB4MT0iMyIgeTE9IjYiIHgyPSIyMSIgeTI9IjYiPjwvbGluZT48bGluZSB4MT0iMyIgeTE9IjE4IiB4Mj0iMjEiIHkyPSIxOCI+PC9saW5lPjwvc3ZnPg==);
 }
 
-.scroll {
-  width: 100%;
-  position: absolute;
-  bottom: 36px;
-  text-align: center;
-}
-
-.scroll-button {
-  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZjAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCI+PC9jaXJjbGU+PHBvbHlsaW5lIHBvaW50cz0iOCAxMiAxMiAxNiAxNiAxMiI+PC9wb2x5bGluZT48bGluZSB4MT0iMTIiIHkxPSI4IiB4Mj0iMTIiIHkyPSIxNiI+PC9saW5lPjwvc3ZnPg==);
-}
-
-/* Welcome Message */
-
 .main {
   width: 100%;
   display: flex;
+  top: 120px;
+  bottom: 0px;
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+  margin: 0 48px 48px 48px;
+  border: solid;
+  border-color: #fffff0;
+  border-width: 4px;
+/*  background-color: #fffff0; */
 }
 
 .hello {
@@ -180,6 +176,20 @@ span {
   margin-bottom: 10px;
 }
 
+.scroll {
+  width: 100%;
+  position: absolute;
+  bottom: 80px;
+  text-align: center;
+}
+
+.scroll-button {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZjAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCI+PC9jaXJjbGU+PHBvbHlsaW5lIHBvaW50cz0iOCAxMiAxMiAxNiAxNiAxMiI+PC9wb2x5bGluZT48bGluZSB4MT0iMTIiIHkxPSI4IiB4Mj0iMTIiIHkyPSIxNiI+PC9saW5lPjwvc3ZnPg==);
+}
+
+/* Welcome Message */
+
+
 /* Media Views */
 
 @media (max-width: 480px) {
@@ -196,6 +206,12 @@ span {
   .dropdown-button {
     height: 32px;
     width: 32px;
+  }
+  .main {
+    top: 72px;
+  }
+  .container {
+    margin: 0 24px 24px 24px;
   }
 }
 
