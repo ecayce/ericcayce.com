@@ -16,7 +16,7 @@
 
 // Set Variables
 $LOCAL_ROOT         = "~/ericcayce.com/";
-$LOCAL_REPO_NAME    = "ericcayce.com";
+$LOCAL_REPO_NAME    = "ericcayce.com.git";
 $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
 $REMOTE_REPO        = "git@github.com:ecayce/ericcayce.com.git";
 $BRANCH             = "master";
