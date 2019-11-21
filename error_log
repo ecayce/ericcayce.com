@@ -1,0 +1,2 @@
+[21-Nov-2019 05:43:53 UTC] PHP Strict Standards:  mktime(): You should be using the time() function instead in /home6/cayceweb/public_html/ericcayce/webhook.php on line 38
+[21-Nov-2019 05:47:04 UTC] PHP Strict Standards:  mktime(): You should be using the time() function instead in /home6/cayceweb/public_html/ericcayce/webhook.php on line 38
