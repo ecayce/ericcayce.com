@@ -1,0 +1,13 @@
+{
+    "email": {
+        "from": "github-hook@example.com",
+        "to": "ericcayce@gmail.com"
+    },
+    "endpoints": [
+        {
+            "repo": "ecayce/ericcayce.com",
+            "branch": "master",
+            "action": "something has been changed on the server",
+            "run": "update_script.sh"
+        }
+    ]
