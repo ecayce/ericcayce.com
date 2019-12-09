@@ -52,34 +52,34 @@ if($_POST["submit"]) {
       <div class="hello">
         <h2></h2>
       </div>
-      <?=$thankYou ?>
+      <div class="contact-form">
         <form method="post" action="contact.php">
-            <label>Name:</label>
-            <input name="sender">
-
-            <label>Email address:</label>
-            <input name="senderEmail">
-
-            <label>Message:</label>
-            <textarea rows="5" cols="20" name="message"></textarea>
-
-            <input type="submit" name="submit">
+            <input name="sender" placeholder="Name">
+            <br>
+            <input name="senderEmail" placeholder="Email address">
+            <br>
+            <textarea rows="6" name="message" placeholder="Your message"></textarea>
+            <br>
+            <input type="submit" name="submit" class="submit">
         </form>
+        <?=$thankYou ?>
+      </div>
 <!--
       <div class="contact-form">
-        <form method=”post” name=”contact_form” action=”contact-form-handler.php”>
-          Your Name: <input type=”text” name=”name”><br>
-          Email Address: <input type=”text” name=”email”><br>
-          Message: <br>
-          <textarea name=”message”></textarea><br>
-          <input type=button value=”Submit”>
+        <form method="post" action="contact.php">
+            <label>Name:</label>
+            <input name="sender" placeholder="Name">
+            <br>
+            <label>Email address:</label>
+            <input name="senderEmail" placeholder="Email">
+            <br>
+            <label>Message:</label>
+            <br>
+            <textarea rows="6" name="message" placeholder="Message"></textarea>
+            <br>
+            <input type="submit" name="submit">
         </form>
-        <script language=”JavaScript”>
-        var frmvalidator = new Validator(“contactform”);
-        frmvalidator.addValidation(“name”,”req”,”Please provide your name”);
-        frmvalidator.addValidation(“email”,”req”,”Please provide your email”);
-        frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”);
-        </script>
+
       </div>
 -->
     </div>
@@ -92,5 +92,4 @@ if($_POST["submit"]) {
 -->
 
 </body>
-
 </html>
