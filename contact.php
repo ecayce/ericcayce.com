@@ -39,7 +39,7 @@ if($_POST["submit"]) {
         <div class="menu_items">
           <li class="menu_button"><a href="about.html">About</a></li>
           <li class="menu_button"><a href="work.html">Work</a></li>
-          <li class="menu_button"><a href="contact.html">Contact</a></li>
+          <li class="menu_button"><a href="contact.php">Contact</a></li>
         </div>
       </nav>
       <div class="dropdown-menu">
@@ -64,24 +64,6 @@ if($_POST["submit"]) {
         </form>
         <?=$thankYou ?>
       </div>
-<!--
-      <div class="contact-form">
-        <form method="post" action="contact.php">
-            <label>Name:</label>
-            <input name="sender" placeholder="Name">
-            <br>
-            <label>Email address:</label>
-            <input name="senderEmail" placeholder="Email">
-            <br>
-            <label>Message:</label>
-            <br>
-            <textarea rows="6" name="message" placeholder="Message"></textarea>
-            <br>
-            <input type="submit" name="submit">
-        </form>
-
-      </div>
--->
     </div>
   </div>
 
