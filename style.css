@@ -293,7 +293,7 @@ span {
   }
   .container {
     margin: 0 24px 24px 24px;
-    padding: 24px;
+    padding: 24px 0px;
     border: none;
     border-top: 2px solid #fffff0;
   }
