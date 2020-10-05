@@ -3,51 +3,31 @@
 <head>
   <meta charset="utf-8">
     <title>Eric Cayce</title>
-    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="fix.element.js"type = "text/javascript"></script>
 </head>
 
 <body>
-
-<!-- MODAL -->
-<meta charset="utf-8">
-<title>Modal popup</title>
-  <script type="text/javascript">
-    window.onload = function() {
-      document.getElementById('button').onclick = function() {
-        document.getElementById('modalOverlay').style.display = 'none'
-      };
-    };
-	</script>
-	<div id="modalOverlay">
-		<div class="modalPopup">
-			<div class="headerBar">
-        <button class="modal-close" id="button"></button>
-			</div>
-			<div class="modalContent">
-					<h1>Under construction</h1>
-					 <p>Hi there! My website is currently under construction, so it may not be working 100% right now.</p>
-           <p>However, feel free to look around and if you're interested you can track my progress on <a href="https://github.com/ecayce/ericcayce.com" target="_blank">github</a>.</p>
-			</div>
-		</div>
-	</div>
-
+<div class="wrap">
 <!-- HEADER -->
   <div class="header">
     <div class="header-inner">
       <div class="title">
-        <a href="https://www.ericcayce.com/">
+        <a href="#0">
           <h1>eric cayce</h1>
         </a>
       </div>
       <nav class="menu">
         <div class="menu_items">
-          <li class="menu_button"><a href="about.html">About</a></li>
-          <li class="menu_button"><a href="work.html">Work</a></li>
-          <li class="menu_button"><a href="contact.php">Contact</a></li>
+          <li class="menu_button"><a href="#page-1">About</a></li>
+          <li class="menu_button"><a href="#page-2">Work</a></li>
+          <li class="menu_button"><a href="#page-3">Contact</a></li>
         </div>
       </nav>
       <div class="dropdown-menu">
@@ -62,12 +42,58 @@
   </div>
 
 <!-- BODY CONTENT -->
-  <div class="main">
-    <div class="container">
+  <div class="main" id="0">
+    <div class="content">
       <div class="hello">
         <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-1">
+    <div class="chapter-title" id="chapter-1">
+      <div class="chapter-title-text">
+        <h2>About me.</h2>
+      </div>
+    </div>
+    <div class="chapter-content" id="content-1">
+      <div class="content-wrap">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-2">
+    <div class="chapter-title" id="chapter-2">
+      <div class="title-frame">
+      <div class="chapter-title-text">
+        <h2>My work.</h2>
+      </div>
+    </div>
+    </div>
+    <div class="chapter-content" id="content-2">
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-3">
+    <div class="chapter-title" id="chapter-3">
+      <div class="chapter-title-text">
+        <h2>Contact me.</h2>
+      </div>
+    </div>
+    <div class="chapter-content" id="content-3">
+      <div class="content-wrap">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+  </div>
+
+  <div class="final-page" id="page-4">
+    <div>
     </div>
   </div>
 
@@ -76,7 +102,6 @@
     <span class="scroll-button"></span>
   </div>
 -->
-
+</div>
 </body>
-<script src="script.js"></script>
 </html>
